@@ -1373,27 +1373,85 @@ a[href*="http"] {
     margin-top: 3mm;
     display: inline-block;
 } */
- /* Make all five buttons exactly the same size */
-.hero-buttons .btn,
-.social-links .btn {
-    width: 180px;
-    height: 48px;
-    box-sizing: border-box;
-
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0 10px;
-    white-space: nowrap;
-    text-align: center;
+ /* .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-/* Keep social links aligned */
+.social-links a {
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    color: #2563eb;
+}
+
+body.dark .social-links a {
+    color: #d1d5db;
+} */
+ 
+/* Social Links Box Styling */
+
 .social-links {
     display: flex;
-    gap: 15px;
     flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 3px 12px;
+
+    border: 1px solid black;
+    border-radius: 7px;
+
+    color: #374151;
+    background-color: transparent;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Dark Mode */
+
+body.dark .social-links a {
+    color: #ffffff;
+    border-color: #d1d5db;
+}
+
+body.dark .social-links a:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 30px;
+    box-sizing: border-box;
+
+    padding: 0 12px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
 }
 /* HERO BUTTONS */
 .hero-buttons {
@@ -1520,12 +1578,12 @@ a[href*="http"] {
     margin: 0;
     padding: 0 10px;
 
-    color: #020101;
+    color: #000000;
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
 
-    border: 2px solid #020202;
+    border: 2px solid #050505;
     border-radius: 8px;
     background: transparent;
 
